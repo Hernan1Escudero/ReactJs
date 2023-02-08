@@ -20,7 +20,9 @@ import { BrowserRouter, Routes, useParams } from 'react-router-dom'
     
     })
     .catch(error => console.log(error))
-    .finally (console.log( "resolve de categoria"))}
+    .finally (console.log( "resolve de categoria"))
+    }
+    
      else{
       getFetch().then( resolve=>{
         setproductos(resolve)

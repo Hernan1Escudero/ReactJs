@@ -18,7 +18,7 @@ const prods =[
   
     return new Promise((resolve, reject) => {
       if (true){
-       setTimeout( resolve(prods), 1000 )
+       setTimeout( resolve(prods), 2000 )
       }
       
       

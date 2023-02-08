@@ -28,13 +28,10 @@ const NavBar = ( ) => {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav  ">
-          <li className="nav-item ">
-            
-            <Link to='/Categoria/Masajes' className="nav-link active" aria-current="page" href="#">Masajes</Link>
+          <li className="nav-item "><Link to='/Categoria/Masajes' className="nav-link active" aria-current="page" href="#">Masajes</Link>
           </li>
           <li className="nav-item">
-          <Link to='/Categoria/Depilacion' className="nav-link active" aria-current="page" href="#">Depilacion</Link>
-          </li>
+          <Link to='/Categoria/Depilacion' className="nav-link active" aria-current="page" href="#">Depilacion</Link></li>
           <li className="nav-item dropdown">
           
             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
