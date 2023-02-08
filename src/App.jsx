@@ -1,21 +1,24 @@
-import { useState } from 'react'
-import Home from './components/HomeContainer/Home'
 
 import './App.css'
+import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import ItemDetailContainer from './components/ItemDetailContainer/itemDetailContainer';
 
 function App() {
-  
-
+ 
   return (
-    <div className="App" >
-     <Home>
-      
-      <ItemListContainer clasName="greet" greeting={"Bienvenidos"}/>
-      </Home>
-      
-     </div>
+     <>
+      <BrowserRouter>
+     <NavBar/>
+      <Routes>
+      <Route path='/' element={ <ItemListContainer/>}/>
+      <Route path='/Category' element={ <ItemListContainer/>}/>
+      <Route path='/detail' element={ <ItemDetailContainer/>}/>
+      </Routes>
+      </BrowserRouter>
+
+    </>
 
   )
 }
