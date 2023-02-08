@@ -30,17 +30,18 @@ const NavBar = ( ) => {
         <ul className="navbar-nav  ">
           <li className="nav-item ">
             
-            <Link to='/Category' className="nav-link active" aria-current="page" href="#">Masajes</Link>
+            <Link to='/Categoria/Masajes' className="nav-link active" aria-current="page" href="#">Masajes</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Depilacion</a>
+          <Link to='/Categoria/Depilacion' className="nav-link active" aria-current="page" href="#">Depilacion</Link>
           </li>
           <li className="nav-item dropdown">
+          
             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Spa
             </a>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="#">Masajes</a></li>
+             <li><Link to='/Categoria/Spa' className="nav-link active " aria-current="page" href="#">Spa-ñol</Link></li> 
               <li><a className="dropdown-item" href="#">Rejuvenecimiento</a></li>
               
               <li><a className="dropdown-item" href="#">Quirurgicos</a></li>
