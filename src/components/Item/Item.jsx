@@ -5,7 +5,7 @@ const Item = (props) => {
 
   return (
  
-    <div  className='  '>
+    <div >
                                           <div  className='card-header'> {props.producto.name}</div>
                                           <div  className='card-body'>Stock:{props.producto.stock}
                                           <img src={props.producto.photo} alt="" className='w-100' />
