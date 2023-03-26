@@ -12,7 +12,6 @@ import { BrowserRouter, Routes, useParams } from 'react-router-dom'
  const [productos, setproductos] = useState([])
  const {idCategoria} = useParams();
 
-
   useEffect(()=>{
      if(idCategoria){
      getFetch().then( res=>{
@@ -36,9 +35,8 @@ import { BrowserRouter, Routes, useParams } from 'react-router-dom'
 
   return (
       <div >
-       <ItemList clasName="Container" productos={productos}/>
-       
-        {/*<Item producto ={productos[0]}/>*/}
+       <ItemList clasName="container" productos={productos}/>
+
       </div>
         )
 }
