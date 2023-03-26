@@ -12,7 +12,7 @@ const NavBar = ( ) => {
         <div className="row flexOnQuery withBackground m-0">
           <div className="col m-0 p-1">
             <div className="secondBackground p-2 m-0">
-             <Link to=''><h1 className="text-center text-white">New Feel</h1></Link>
+             <Link to='/'><h1 className="text-center text-white">New Feel</h1></Link>
               
             </div>
           </div>
