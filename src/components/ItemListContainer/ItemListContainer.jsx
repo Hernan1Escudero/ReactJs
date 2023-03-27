@@ -3,8 +3,7 @@ import ItemList from '../ItemList/ItemList'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { getFetch } from '../../utils/gfetch'
-import Item from '../Item/Item'
-import { BrowserRouter, Routes, useParams } from 'react-router-dom'
+import {  useParams } from 'react-router-dom'
 
 
  const ItemListContainer = () => {
@@ -27,18 +26,17 @@ import { BrowserRouter, Routes, useParams } from 'react-router-dom'
         setproductos(resolve)
       })
       .catch(error => console.log(error))
-      .finally (console.log( "termino"))
+      .finally ()
 
      }
    
   },[idCategoria])
 
   return (
-      <div >
-       <ItemList clasName="container" productos={productos}/>
-
-      </div>
-        )
+    <div >
+      <ItemList clasName="container" productos={productos}/>
+    </div>
+  )
 }
 
 export default ItemListContainer

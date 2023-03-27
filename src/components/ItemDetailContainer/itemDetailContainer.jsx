@@ -1,8 +1,11 @@
 import ItemDetail from "../ItemDetail/ItemDetail"
+import CartContainer from "../CartContainer/CartContainer";
 import { useState } from "react";
 import { getFetch } from '../../utils/gfetch'
-import { BrowserRouter, Routes, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useEffect } from 'react'
+
+
 
 const ItemDetailContainer = () => {
 
@@ -19,7 +22,7 @@ const ItemDetailContainer = () => {
        
        })
        .catch(error => console.log(error))
-       .finally (console.log( "resolve de categoria"))
+       .finally ()
        }
        
         else{
@@ -27,7 +30,7 @@ const ItemDetailContainer = () => {
            setproductos(resolve)
          })
          .catch(error => console.log(error))
-         .finally (console.log( "termino"))
+         .finally ()
    
         }
       
@@ -37,7 +40,7 @@ const ItemDetailContainer = () => {
         <div  className="container ">
                 
          <ItemDetail   productos={productos}>  </ItemDetail>
-         <div className="card">cart container</div>
+        
         </div>
     )
 }

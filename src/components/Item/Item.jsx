@@ -1,5 +1,4 @@
 
-import { Link, useParams } from "react-router-dom"
 
 const Item = (props) => {
 
@@ -18,7 +17,7 @@ const Item = (props) => {
                                           
                                           <button  className='btn btn-outline-dark w-100'>Detalle </button>
                                             
-                                          </div>
+                                          </div> 
                                           
                                        </div>
                                        
